@@ -1,6 +1,6 @@
-/* Javascript
+/*
+ * Javascript file for BigData Website
  *
- * See http://jhere.net/docs.html for full documentation
  */
 
 var whatsPoppinHeatMap = [
@@ -34,6 +34,6 @@ $(window).on('load', function() {
   $('#mapContainer').jHERE({
         enable: false, /*Disable everything including interaction*/
         center: [40.018, -105.28],
-    	zoom: 17
+    	  zoom: 17
     }).jHERE('heatmap', whatsPoppinHeatMap /*defined elsewhere*/, 'density');
 });
