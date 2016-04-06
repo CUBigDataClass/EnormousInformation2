@@ -1,9 +1,9 @@
-/* Javascript
+/*
+ * Javascript file for BigData Website
  *
- * See http://jhere.net/docs.html for full documentation
  */
 
-var heatMapData = [
+var whatsPoppinHeatMap = [
   	// The Walrus
     {
         "value": 4000,
@@ -15,13 +15,25 @@ var heatMapData = [
         "value": 8000,
         "latitude": 40.01666,
         "longitude": -105.2808
+    },
+  	// Lucile's
+  	{
+        "value": 5500,
+        "latitude": 40.02,
+        "longitude": -105.2779
+    },
+  	// Hapa
+  	{
+        "value": 7000,
+        "latitude": 40.0178,
+        "longitude": -105.2809
     }
 ];
 
 $(window).on('load', function() {
   $('#mapContainer').jHERE({
         enable: false, /*Disable everything including interaction*/
-        center: [40.016, -105.28],
-    	zoom: 17
-    }).jHERE('heatmap', heatMapData /*defined elsewhere*/, 'density');
+        center: [40.018, -105.28],
+    	  zoom: 17
+    }).jHERE('heatmap', whatsPoppinHeatMap /*defined elsewhere*/, 'density');
 });
