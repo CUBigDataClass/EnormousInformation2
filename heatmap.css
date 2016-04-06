@@ -3,6 +3,7 @@
 #top10List {
   font-family: sans-serif;
   float: left;
+  position: relative;
   border-radius: 8px;
   background-color: gray;
   padding-right: 10px;
@@ -17,6 +18,7 @@
   border-radius: 8px;
   color:#444;
   float: left;
+  position: relative;
   padding-left: 10px;
   padding-right: 10px;
   height: 100vh;
@@ -26,6 +28,7 @@
 #twitterFeed {
   font-family: sans-serif;
   float: left;
+  position: relative;
   background-color: blue;
   border-color: darkgrey;
   border-radius: 8px;
