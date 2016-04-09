@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <!-- Introducing a new font -->
+    <link href="fonts/RemachineScript.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    
     <meta charset="utf-8">
+    
     <!--Insert code for navigation bar-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <script src="http://code.jquerycom/jquery-latest.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
     <!--End code for navigation bar-->
+    
     <title>jHERE - Heatmaps</title>
     <meta name="description" content="jHERE - Heatmaps">
+    
     <!-- JQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="http://jhere.net/js/jhere.js"></script>
     <script src="heatmap.js"></script>
     <link rel="icon" href="http://jhere.net/favicon.ico">
+    
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
       <!--Insert code for navigation bar-->
       <div id='cssmenu'>
         <ul>
-              <li><a href='Overall.html'>Overall</a></li>  
+              <li><a href='index.html'>Overall</a></li>  
               <li class='active'><a href='#'>Boulder</a></li> 
               <li><a href='Denver.html'>Denver</a></li>
               <li><a href='FortCollins.html'>FortCollins</a></li>
         </ul>
       </div>
     <!--End code for navigation bar-->
-    <h1 align='center' style='font-family:sans-serif'>What's Poppin' In Boulder</h1>
+    <div id="title">
+      <h1 align='center'>What's Poppin' In Boulder!</h1>
+    </div>
     <div id="top10List"></div>
     <div id="mapContainer"></div>
     <div id="twitterFeed"></div>

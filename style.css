@@ -1,4 +1,16 @@
 /* CSS for BigData Website */
+@font-face {
+        font-family: 'firstfont';
+        src: url('fonts/RemachineScript.ttf');
+}
+
+#title h1 {
+  font-size: 50px;
+  font-family: firstfont;
+  font-style:normal;
+  opacity: 0.7;
+  filter: alpha(opacity=30); 
+}
 
 #top10List {
   font-family: sans-serif;
@@ -68,7 +80,8 @@
 }
 #cssmenu {
   width: auto;
-  font-family: Raleway, sans-serif;
+  /*font-family: Raleway, sans-serif;*/
+  font-family: firstfont;
   line-height: 1;
 }
 #cssmenu > ul {
@@ -93,10 +106,10 @@
 }
 #cssmenu > ul > li > a {
   padding: 16px 20px;
-  font-size: 14px;
+  font-size: 25px;
   color: #ffffff;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-decoration: none;
   background: #32804D;
   -webkit-transition: all .3s;
@@ -182,7 +195,7 @@
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 1px;
   background: #32804D;
 }
