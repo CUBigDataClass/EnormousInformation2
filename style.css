@@ -111,7 +111,7 @@
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
-  color: #dff2fa;
+  color: #33cc33;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
