@@ -1,11 +1,10 @@
 <?php
 
-$connection = new MongoClient();
-
-$db = $connection->WhatsPoppin;
-
 function insertDatabase($text, $poppinlocale) {
-	$collection = $db->introdata
+	$connection = new MongoClient(); //initiate mongo
+	$db = $connection->WhatsPoppin; //use WhatsPoppin
+
+	$collection = $db->introdata;
 	$doc = array(
 		"text" => $text,
 		"id" => $poppinlocale
@@ -14,7 +13,10 @@ function insertDatabase($text, $poppinlocale) {
 }
 
 function insertResult($name, $count, $text) {
-        $collection = $db->result
+        $connection = new MongoClient(); //initiate mongo
+        $db = $connection->WhatsPoppin; //use WhatsPoppin
+
+	$collection = $db->result;
         $doc = array(
                 "name" => $name
 		"count" => $count,
