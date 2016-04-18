@@ -10,6 +10,7 @@
   font-style:normal;
   opacity: 0.7;
   filter: alpha(opacity=30);
+  color: #0288D1;
 }
 
 #daysOfWeekNav {
@@ -18,23 +19,53 @@
 
 #categoryNav {
   text-align: center;
+  float: left;
+  width: 15%;
+  height: 100vh;
+  padding-left: 30px;
+  /*padding-top: 100px;*/
+  list-style-type: none;
+}
+
+#categoryNav > li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #daysOfWeekNav > ul > li.active > a {
   color: #1C86EE;
 }
 
-#categoryNav > ul > li.active > a {
-  color: #1C86EE;
+#categoryNav > li.active > a {
+  color: #FFFFFF;
+}
+
+#categoryNav > li.active {
+  background-color: #607D8B;
+}
+
+#categoryNav > li:hover {
+  background-color: #DCDCDC;
+  text-decoration: none;
+}
+
+#categoryNav > li > a:hover {
+  color: #607D8B;
+  text-decoration: none;
+}
+
+#graph {
+  width: 85%;
+  float: right;
+  background-color: black;
+  /*margin-right: 10px;*/
 }
 
 a {
   color: gray;
-  /*background-color: lightgray;*/
-  /*padding-top: 3px;*/
 }
 
-a:hover {
+#daysOfWeekNav > ul > li > a:hover {
   color: black;
   text-decoration: none;
 }
@@ -79,7 +110,7 @@ a:active {
   line-height: 1;
 }
 #cssmenu > ul {
-  background: #32804D;
+  background: #03A9F4;
 }
 #cssmenu > ul > li {
   float: left;
@@ -105,7 +136,7 @@ a:active {
   letter-spacing: 1px;
   /*text-transform: uppercase;*/
   text-decoration: none;
-  background: #32804D;
+  background: #03A9F4;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -118,7 +149,12 @@ a:active {
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
-  color: #33cc33;
+  /*color: #33cc33;*/
+  background-color: #B3E5FC;
+}
+/* TODO: this is wrong */
+#cssmenu > ul > li.active {
+  color: #607D8B;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
@@ -155,7 +191,7 @@ a:active {
 }
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
-  background: #32804D;
+  background: #03A9F4;
 }
 #cssmenu.small-screen {
   width: 100%;
@@ -191,7 +227,7 @@ a:active {
   color: #ffffff;
   /*text-transform: uppercase;*/
   letter-spacing: 1px;
-  background: #32804D;
+  background: #03A9F4;
 }
 #cssmenu.small-screen #menu-button:after {
   content: "";
