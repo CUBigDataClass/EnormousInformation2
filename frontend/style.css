@@ -12,8 +12,25 @@
   filter: alpha(opacity=30);
 }
 
-#graph {
-  
+#daysOfWeekNav {
+  text-align: center;
+}
+
+#categoryNav {
+  text-align: center;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1C86EE;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
