@@ -20,8 +20,18 @@
   text-align: center;
 }
 
+#daysOfWeekNav > ul > li.active > a {
+  color: #1C86EE;
+}
+
+#categoryNav > ul > li.active > a {
+  color: #1C86EE;
+}
+
 a {
   color: gray;
+  /*background-color: lightgray;*/
+  /*padding-top: 3px;*/
 }
 
 a:hover {
