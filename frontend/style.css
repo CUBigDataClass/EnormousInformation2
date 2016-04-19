@@ -39,9 +39,9 @@
   padding-bottom: 15px;
 }
 
-#daysOfWeekNav > li {
-  padding-right: 15px;
-  padding-left: 15px;
+#daysOfWeekNav > li > a{
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 li:hover {
