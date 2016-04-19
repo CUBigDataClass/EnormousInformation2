@@ -13,8 +13,15 @@
   color: #0288D1;
 }
 
+#graphDiv {
+  padding-right: 30px;
+}
+
 #daysOfWeekNav {
   text-align: center;
+  vertical-align: bottom;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #categoryNav {
@@ -23,8 +30,8 @@
   width: 15%;
   height: 100vh;
   padding-left: 30px;
-  /*padding-top: 100px;*/
   list-style-type: none;
+  vertical-align: bottom;
 }
 
 #categoryNav > li {
@@ -32,46 +39,45 @@
   padding-bottom: 15px;
 }
 
-#daysOfWeekNav > ul > li.active > a {
-  color: #1C86EE;
-}
+/*#list-inline > li {
+  padding-right: 15px;
+  padding-left: 15px;
+}*/
 
-#categoryNav > li.active > a {
-  color: #FFFFFF;
-}
-
-#categoryNav > li.active {
-  background-color: #607D8B;
-}
-
-#categoryNav > li:hover {
+li:hover {
   background-color: #DCDCDC;
   text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-#categoryNav > li > a:hover {
+li > a:hover {
   color: #607D8B;
   text-decoration: none;
+}
+
+li.active {
+  background-color: #607D8B;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+li.active > a  {
+  color: #FFFFFF;
 }
 
 #graph {
   width: 85%;
   float: right;
-  background-color: black;
-  /*margin-right: 10px;*/
+  background-color: #607D8B;
 }
 
 a {
   color: gray;
-}
-
-#daysOfWeekNav > ul > li > a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-a:active {
-  color: #1C86EE;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
