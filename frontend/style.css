@@ -39,16 +39,16 @@
   padding-bottom: 15px;
 }
 
-/*#list-inline > li {
+#daysOfWeekNav > li {
   padding-right: 15px;
   padding-left: 15px;
-}*/
+}
 
 li:hover {
   background-color: #DCDCDC;
   text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
   padding-bottom: 10px;
   padding-top: 10px;
 }
