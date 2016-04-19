@@ -155,22 +155,21 @@ a {
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
-  /*color: #33cc33;*/
   background-color: #B3E5FC;
-}
-/* TODO: this is wrong */
-#cssmenu > ul > li.active {
   color: #607D8B;
 }
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li > a:hover {
+#cssmenu > ul > li:hover > a{
+  /* TODO: add color on hover - main nav */
+}
+/*#cssmenu > ul > li:hover > a,*/
+/*#cssmenu > ul > li > a:hover {
   color: #dff2fa;
   -webkit-transform: rotateX(90deg) translateY(-23px);
   -moz-transform: rotateX(90deg) translateY(-23px);
   transform: rotateX(90deg) translateY(-23px);
   -ms-transform: none;
-}
-#cssmenu > ul > li > a::before {
+}*/
+/*#cssmenu > ul > li > a::before {
   position: absolute;
   top: 100%;
   left: 0;
@@ -194,7 +193,7 @@ a {
   -moz-transform-origin: 50% 0;
   transform-origin: 50% 0;
   -ms-transform: translateY(- -18px);
-}
+}*/
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
   background: #03A9F4;
