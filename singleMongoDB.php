@@ -1,28 +1,30 @@
 <?php
 
-function insertDatabase($text, $poppinlocale) {
+function insertOutput($poppinlocale) {
+        $connection = new MongoClient(); //initiate mongo
+        $db = $connection->WhatsPoppin; //use WhatsPoppin
+        $collection = $db->result;
+	
+        $collection->update(
+		array("poppinlocale" => $poppinlocale),
+		array('$inc' => array("hits" => 1)),
+		array("dayofweek" => date("l"))
+		array("multiple" => true)
+		);
+}
+
+function insertInput($text, $poppinlocale) {
 	$connection = new MongoClient(); //initiate mongo
 	$db = $connection->WhatsPoppin; //use WhatsPoppin
 
 	$collection = $db->introdata;
 	$doc = array(
-		"text" => $text,
-		"id" => $poppinlocale
+		"message" => $text,
+		"id" => $poppinlocale,
+		"dayofweek" => date("l")
 	);
 	$collection->insert( $doc );
-}
-
-function insertResult($name, $count, $text) {
-        $connection = new MongoClient(); //initiate mongo
-        $db = $connection->WhatsPoppin; //use WhatsPoppin
-
-	$collection = $db->result;
-        $doc = array(
-                "name" => $name
-		"count" => $count,
-		"text" => $text
-        );
-        $collection->insert( $doc );
+	insertOutput($poppinlocale);
 }
 
 ?>
