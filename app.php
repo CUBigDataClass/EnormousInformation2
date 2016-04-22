@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 function insertOutput($poppinlocale) {
         $connection = new MongoClient(); //initiate mongo
         $db = $connection->WhatsPoppin; //use WhatsPoppin
