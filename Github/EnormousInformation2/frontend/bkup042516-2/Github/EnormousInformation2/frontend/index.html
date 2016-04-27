@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Introducing a new font -->
+    <link href="fonts/RemachineScript.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
+    <meta charset="utf-8">
+
+    <!--Insert code for navigation bar-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <script src="http://code.jquerycom/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <!--End code for navigation bar-->
+
+    <title>What's Poppin'!</title>
+    <!-- <meta name="description" content="jHERE - Heatmaps"> -->
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+    <!-- Added highcharts dependencies -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="highchart.js"></script>
+
+    <!-- Added jhere map dependencies -->
+    <!-- <script src="http://jhere.net/js/jhere.js"></script> -->
+    <!-- <script src="heatmap.js"></script> -->
+    <!-- <link rel="icon" href="http://jhere.net/favicon.ico"> -->
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <!--Insert code for navigation bar-->
+      <div id='cssmenu'>
+        <ul>
+              <li class='active'><a href='#'>Overall</a></li>
+              <li><a href='Boulder.html'>Boulder</a></li>
+              <li><a href='Denver.html'>Denver</a></li>
+              <li><a href='FortCollins.html'>FortCollins</a></li>
+        </ul>
+      </div>
+    <!--End code for navigation bar-->
+
+    <div id="title">
+      <h1 align='center'>What's Poppin' Everywhere!</h1>
+    </div>
+
+    <div id="graphDiv">
+      <!-- TODO: link to correct data (not #) -->
+      <div id=daysOfWeekNav class="list-inline">
+        <li class='active'><a href="#">Sunday</a></li><!--
+      --><li><a href="#">Monday</a></li><!--
+      --><li><a href="#">Tuesday</a></li><!--
+      --><li><a href="#">Wednesday</a></li><!--
+      --><li><a href="#">Thursday</a></li><!--
+      --><li><a href="#">Friday</a></li><!--
+      --><li><a href="#">Saturday</a></li>
+      </div>
+      <!-- TODO: link to correct data (not #) -->
+      <div id="categoryNav">
+        <li class='active'><a href="#">Restaurants</a></li>
+        <li><a href="#">Outdoor</a></li>
+        <li><a href="#">Art/Entertainment</a></li>
+        <li><a href="#">Nightlife</a></li>
+      </div>
+      <div id="graph"></div>
+    </div>
+
+  </body>
+</html>

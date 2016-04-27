@@ -31,6 +31,7 @@ function addNewLocations($collection){
 		}
 	}
 }
+//addNewLocations($collection);
 
 
 function updateTweets($collection){
@@ -67,6 +68,7 @@ function updateTweets($collection){
 		}
 	}
 }
+//updateTweets($collection);
 
 
 function showData($collection, $field){
@@ -106,12 +108,4 @@ if(isset($_GET['q']) && $_GET['q'] = 1){
 
 	echo $output;
 }
-
-if(isset($_GET['update']) && $_GET['update'] = 1){
-
-	addNewLocations($collection);
-	updateTweets($collection);
-
-}
-
 ?>

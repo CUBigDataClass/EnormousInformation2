@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Introducing a new font -->
+    <link href="fonts/RemachineScript.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+
+    <!--Insert code for navigation bar-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <!--End code for navigation bar-->
+
+    <title>Whats Poppin'!</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <!--Insert code for navigation bar-->
+      <nav class="locationNav">
+        <ul>
+              <li data-location="Boulder" class='active'><i class="fa fa-home" aria-hidden="true"></i> Boulder</li>
+              <li data-location="Denver"><i class="fa fa-building" aria-hidden="true"></i> Denver</li>
+              <li data-location="Fort Collins"><i class="fa fa-fort-awesome" aria-hidden="true"></i> Fort Collins</li>
+        </ul>
+        <div id="title">
+           <h1><i class="fa fa-comments-o" aria-hidden="true"></i><span>Whats Poppin'?<span></h1>
+        </div>
+      </nav>
+    <!--End code for navigation bar-->
+
+    <div class="clearfix" id="graphDiv">
+      <h2 class="map-title"><span class="location">Boulder</span> : <span class="category">Restaurants</span></h2>
+      <ul id="categoryNav">
+        <li data-cat="restaurants" class='active'><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurants</li>
+        <li data-cat="active"><i class="fa fa-leaf" aria-hidden="true"></i> Outdoor</li>
+        <li data-cat="arts"><i class="fa fa-paint-brush" aria-hidden="true"></i> Art & Entertainment</li>
+        <li data-cat="nightlife"><i class="fa fa-moon-o" aria-hidden="true"></i> Nightlife</li>
+      </ul>
+      <div id="graph"></div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+    <!-- Added highcharts dependencies -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="js/highchart.js"></script>
+
+    <!-- Custom JS / App -->
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>

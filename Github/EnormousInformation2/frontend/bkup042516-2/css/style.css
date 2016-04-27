@@ -1,0 +1,390 @@
+/* CSS for BigData Website */
+#title h1, li, i{
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+body{
+  background: #212121;
+}
+#title h1 {
+  position: fixed;
+  left: -10px; top: -60px;
+  font-size: 300%;
+  font-style:normal;
+  text-align: center;
+  text-indent: 40px;
+  padding:0;
+  z-index: 100;
+  text-shadow: 2px 2px 0 #000000;
+  color: #ffffff;
+  background: #0288D1;
+  padding: 50px 250px 30px 40px;
+  font-family: 'Pacifico', cursive;
+  -moz-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  overflow: hidden;
+}
+
+#title h1 i {
+    font-size: 331%;
+    position: absolute;
+    left: -33px;
+    top: 0;
+    opacity: .2;
+    z-index: 0;
+}
+
+#title h1 span{
+    position: relative;
+    z-index: 9;
+}
+
+#graphDiv {
+  margin-top: 70px;
+  height: calc(100% - 70px);
+  width: 100%;
+  position: absolute;
+  background: rgba(255,255,255,.1);
+}
+
+.map-title{
+  position: absolute;
+  top: 20px; left: 330px;
+  color: #ffffff;
+  z-index: 999999;
+  font-family: 'Pacifico', cursive;
+}
+.map-title .category{ font-family: 'Oswald', sans-serif; }
+
+#daysOfWeekNav {
+  text-align: center;
+  vertical-align: bottom;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#categoryNav {
+  text-align: center;
+  float: left;
+  width: 15%;
+  margin-top: 100px;
+  padding-left: 0px;
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+#categoryNav > li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 150%;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+i{
+  margin-right: 10px;
+}
+
+li:not(.active):hover > i{
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.locationNav{
+  position: fixed;
+  top: 0; left: 0;
+  padding: 0; margin: 0;
+  width: 100%;
+  background: #0288D1;
+  z-index: 9999;
+  font-family: 'Oswald', sans-serif;
+}
+.locationNav ul{
+  position: relative;
+  margin: 0 0 0 60%;
+  width: 40%;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+.locationNav ul li{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000000;
+  margin: 10px 1.5%;
+  width: 29.5%;
+  padding: 10px 0;
+  font-size: 150%;
+  color: #ffffff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.locationNav ul li:not(.active):hover{
+  background: #03A9F4;
+  -webkit-box-shadow:inset 0 0 5px 0px rgba(0,0,0,.2);
+  box-shadow:inset 0 0 5px 0px rgba(0,0,0,.2);
+}
+.locationNav ul li.active{
+  -webkit-box-shadow:inset 0 0 10px 1px rgba(0,0,0,.4);
+  box-shadow:inset 0 0 10px 1px rgba(0,0,0,.4);
+}
+
+li:not(.active):hover {
+  background: rgba(2,136,209,.1);
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+li > a:hover {
+  color: #607D8B;
+  text-decoration: none;
+}
+
+li.active {
+  background-color: #0288D1;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #FFFFFF;
+
+}
+
+.highcharts-axis-labels *, .highcharts-legend-item *:first-child{
+  fill: #ffffff !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 16px !important;
+}
+
+.highcharts-axis-labels *{
+  text-transform: uppercase !important;
+}
+.highcharts-button{
+  display: none;
+}
+#graph {
+  width: 85%; height: 100%;
+  border-left: solid 4px #0288D1;
+  float: right;
+  background-color: #607D8B;
+}
+
+a {
+  color: gray;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: sans-serif;
+  line-height: 1;
+}
+#cssmenu > ul {
+  background: #03A9F4;
+}
+#cssmenu > ul > li {
+  float: left;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 16px 20px;/
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  background: #03A9F4;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.active > a {
+  background: #0288D1;
+}
+#cssmenu > ul > li:hover > a{
+  /* TODO: add color on hover - main nav */
+}
+/*#cssmenu > ul > li:hover > a,*/
+/*#cssmenu > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}*/
+/*#cssmenu > ul > li > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  color: #dff2fa;
+  background: #235434;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(- -18px);
+}*/
+#cssmenu > ul > li:hover > a::before,
+#cssmenu > ul > li > a:hover::before {
+  background: #03A9F4;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -ms-transform: none;
+}
+#cssmenu.small-screen > ul > li > a::before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  background: #03A9F4;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 22px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #dff2fa;
+  border-bottom: 2px solid #dff2fa;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #dff2fa;
+}
+
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
